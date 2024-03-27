@@ -11,6 +11,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- osTicket (open source Ticketing System)
 
 <h2>Operating Systems Used </h2>
 
@@ -19,8 +20,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Azure Virtual Machine
-- osTicket Installation files
+- Internet Information Services (IIS)
+- PHP Manager
+- Rewrite Module
+- VC Redist
+- MySQL
 - Heidi SQL
+- osTicket v1.15.8
+- Link to Installation Files: [Click here to access the installation files on Google Drive](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 
 <h2>Installation Steps</h2>
 
