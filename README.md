@@ -151,7 +151,9 @@ For the final step, you will need to do some clean up. Open File Explorer and go
 
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/939df60a-4c02-4d30-a5be-76c11edf54f7)
 <p>
-osTicket Help Desk Login Page : http://localhost/osTicket/scp/login.php 
+osTicket Help Desk Login Page : http://localhost/osTicket/scp/login.php
+</p>
+<p>
 osTicket End User Page: http://localhost/osTicket/
 </p>
 <br />
