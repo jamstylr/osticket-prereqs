@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/312cc62c-2636-4ed2-add5-458bb9d8b015)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/30dfbd48-be11-436a-bc78-606c4a85b912)
 <p>
 To begin, create a Windows 10 Pro Virtual Machine on Azure with 2-4 vcpus (Virtual CPUs). During the setup process, make sure to enable the creation of a new Virtual Network (VNet) for connectivity. Afterwards, connect to the VM using its Public IP Address.
 </p>
@@ -59,28 +59,28 @@ Next, create a new folder/directory named "PHP" in the Windows (C:) drive, so th
 <br />
 
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/35730c06-c11f-4742-93a3-34aab0aa706b)
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/89a75de4-2dbe-43c0-bbb5-e83a82ad061e)
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/21a71271-1006-4d64-87c3-277134880aac)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/fd7cda36-e800-4739-b8c7-b66472e1408b)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/6ccfdebc-95b5-4b0c-ad48-9dacb9f7c70e)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/27688437-6a9c-4f1a-8954-a9b582072fbe)
 <p>
 From the Installation Files Folder, download and install VC_redist.x86.exe. Then download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi). In the MySQL Setup Wizard, choose “Typical” Setup Type and Launch Configuration Wizard (after install). In the MySQL Configuration Wizard, select "Standard Configuration" and set a new root password, such as "Password1" or any other preferred password. The username will be “root”.
 </p>
 <br />
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/ff5cccfc-7080-4726-b18b-b636a612affa)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/33042b83-af18-4edf-a970-e1872f8d47e5)
 <p>
 Next, search for "IIS" in the Windows search bar, then right-click "Internet Information Services (ISS) Manager" and select "Run as Administrator".
 </p>
 <br />
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/a49ebfc7-7bbd-442d-8030-da07ba9bef06)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/7e6d0ff6-0c7c-41a6-aeec-57262c63befb)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/88158ba9-6c2d-480f-a6d3-4cdcd15688ed)
 <p>
 In the ISS Manager, open "PHP Manager" and proceed to "Register New PHP Version”. Then, locate and select the PHP CGI executable file (php-cgi.exe) from the PHP folder you created earlier (C:\PHP).
 </p>
 <br />
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/9e4341a4-07fa-40c3-8c39-6c4988a8515f)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/0d633d4a-6693-4ffe-b226-15407085c942)
 <p>
 In the Internet Information Services Manager window, click on "Restart" to reload the IIS Server, located under "Manage Server".
 </p>
@@ -93,7 +93,7 @@ Download "osTicket v1.15.8.zip" from the Installation Files Folder. Extract the 
 </p>
 <br />
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/458cf518-5a75-4535-8f2c-907267e95657)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/406f683a-791b-4f04-be15-6c5be430871f)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/8c276b5b-6e43-4826-bc85-2380af1d0070)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/c212cb1d-d09c-4e67-9b00-1aa2068ef6b9)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/a19e3718-565b-4665-8180-bb6b87c47194)
@@ -109,7 +109,7 @@ Now that you have those extensions enabled in IIS, you need to rename one of the
 </p>
 <br />
 
-![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/c43bcf2d-b30a-4e57-ab35-3b697af09145)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/eea67e69-b1a0-454d-b379-30b254876e43)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/6ccffc10-42e1-4cd7-be77-210811e49ef4)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/bc9af290-a436-4a45-bae4-971f471c8604)
 <p>
