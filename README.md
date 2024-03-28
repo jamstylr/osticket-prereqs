@@ -111,7 +111,47 @@ Now that you have those extensions enabled in IIS, you need to rename one of the
 
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/c43bcf2d-b30a-4e57-ab35-3b697af09145)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/6ccffc10-42e1-4cd7-be77-210811e49ef4)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/bc9af290-a436-4a45-bae4-971f471c8604)
 <p>
 Once you've renamed the file, right-click on it and select "Properties". In the Properties window, navigate to the "Security" tab and click on "Advanced". A new window will open named "Advanced Security Settings for ost-config.php”, select "Disable inheritance” and then choose "Remove all inherited permissions from this object". After this, go back to the "Advanced Security Settings" window and click "Add", click "Select a principle" in the next window, and in the window after that type in "Everyone" in the box. Click “Check Names” and then click “Ok”. In the "Permission Entry" window, select “Full Control” and make sure all other permissions are selected and click “Ok”. Finally, in the "Advanced Security Settings" window, click "Apply" and then "Ok".
+</p>
+
+<p>
+Once you've completed those steps, proceed with setting up osTicket in your browser. Click "Continue" on the osTicket browser page. Fill out the necessary fields on the page, excluding the Database Settings section at the bottom. You'll address this later. The default email address is the one that receives emails from customers. Do not click "Install" yet, as you'll require additional SQL information before proceeding.
+</p>
+<br />
+
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/5183b002-1419-4b4c-8f67-30dfcf6f51c2)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/effef053-57e7-491c-88fd-c6e447309e8f)
+<p>
+From the Installation Files Folder, download and install HeidiSQL. HeidiSQL is used to manage and interact with the MySQL database, which is necessary for configuring and setting up osTicket. Open HeidiSQL and click "New" in the bottom left corner to create a new session. Enter the username “root” and the password “Password1” (or the password that you used earlier in the installation of MySQL) and then click “Open”.
+</p>
+<br />
+
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/48203bc6-8450-461e-8388-c1ee1042fe00)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/7839efb5-ca52-4edc-963b-9dfbe7417d2e)
+<p>
+In the new HeidiSQL window you will now create a new database by right clicking "Unnamed" on the left -> Create new-> Database. Name this Database "osTicket" and click “Ok”.
+</p>
+<br />
+
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/0651534b-2bca-42be-868e-86e129ea584b)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/632ebb73-ab0b-43e3-bc48-ed01fc28ef3b)
+<p>
+You can now go back to the osTicket installation form and fill out the remaining information required by typing "osTicket" in MySQL Database, "root" in MySQL Username, and “Password1" (or your chosen password) in MySQL Password. Then, click "Install Now”.
+</p>
+<br />
+
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/7a66aaab-0682-4669-a215-373d9e886840)
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/73aa1372-45ce-43b8-a206-02af6938ab25)
+<p>
+For the final step, you will need to do some clean up. Open File Explorer and go to C:\inetpub\wwwroot\osTicket\ and delete the "setup" folder. Then go into the "include" folder and change the permissions for "ost-config.php". You will do this the same as before: Right click-> Properties-> Security tab-> Advanced-> Open the Allow Everyone tab under Permission entries-> Check only “Read” and “Read & Execute”-> Ok-> Apply-> Ok.
+</p>
+<br />
+
+![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/939df60a-4c02-4d30-a5be-76c11edf54f7)
+<p>
+osTicket Help Desk Login Page : http://localhost/osTicket/scp/login.php 
+osTicket End User Page: http://localhost/osTicket/
 </p>
 <br />
