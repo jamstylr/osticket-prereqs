@@ -76,7 +76,7 @@ Next, search for "IIS" in the Windows search bar, then right-click "Internet Inf
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/a49ebfc7-7bbd-442d-8030-da07ba9bef06)
 ![image](https://github.com/jamstylr/osticket-prereqs/assets/159660523/88158ba9-6c2d-480f-a6d3-4cdcd15688ed)
 <p>
-In the ISS Manager, open "PHP Manager" and click on "Register New PHP Version”. Then select “Browse” and choose the PHP CGI executable file (php-cgi.exe) located within the PHP folder you created earlier (C:\PHP\php-cgi.exe).
+In the ISS Manager, open "PHP Manager" and proceed to "Register New PHP Version”. Then, locate and select the PHP CGI executable file (php-cgi.exe) from the PHP folder you created earlier (C:\PHP).
 </p>
 <br />
 
